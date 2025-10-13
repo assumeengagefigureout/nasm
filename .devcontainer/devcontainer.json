@@ -1,0 +1,29 @@
+{
+"name": "8086 Assembly Dev",
+"build": {
+"dockerfile": "Dockerfile",
+"context": "."
+},
+"customizations": {
+"vscode": {
+"extensions": [
+"ms-vscode.cpptools",
+"webfreak.debug",
+"ms-vscode.cmake-tools"
+]
+}
+},
+"runArgs": [
+"-e", "DISPLAY",
+"-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+"--privileged"
+],
+"mounts": [
+"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+],
+"workspaceFolder": "/workspace",
+"settings": {
+"terminal.integrated.shell.linux": "/bin/bash"
+},
+"remoteUser": "vscode"
+}
