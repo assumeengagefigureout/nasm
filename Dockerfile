@@ -6,7 +6,6 @@ RUN apt-get update \
     nasm \
     dosbox \
     qemu-system-x86 \
-    ndisasm \
     mtools \
     less \
     build-essential \
