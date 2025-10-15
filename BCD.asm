@@ -1,0 +1,7 @@
+DATAS SEGMENT
+
+
+ENDS
+
+
+STATCK 
