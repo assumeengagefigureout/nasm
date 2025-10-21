@@ -2,7 +2,6 @@
 
 这是一个面向在 Linux 下安全练习 8086/实模式汇编的小项目。仓库包含：
 
-- 一个简单的引导扇区示例：`boot.asm`（生成 `boot.bin`，可写入软盘镜像并用 QEMU 启动）
 - 一个最小的 DOS `.COM` 程序示例：`hello.asm`（生成 `hello.com`，可在 DOSBox 或虚拟机中运行）
 - 用于容器化开发的 `Dockerfile` 和 `.devcontainer`，方便隔离开发环境（包含 nasm、qemu、dosbox 等）。
 
@@ -30,11 +29,15 @@ nasm -f bin test.asm -o test.com
 
 在 DOSBox 调试器中，你可以：
 
-dosbox -debug -c "mount c ." -c "c:" -c " test.com"
+dosbox  -c "mount c ." -c "c:" -c "  debug test.com"
 
 
 按 t 键：单步执行
 按 r 键：查看所有寄存器
+按 d 键：查看内存内容
+按 u 键：查看反汇编代码
+按 q 键：退出调试
+
 按 d 键：查看内存内容
 按 u 键：查看反汇编代码
 按 q 键：退出调试
