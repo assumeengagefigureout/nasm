@@ -21,18 +21,25 @@ start:
 
 
 
-
-
     mov     ax, [VAR2]      
     mov     dx, [VAR2+2]   
+
+# ax 7455
+# dx E259
 
 
     shl     ax, 1           
     rcl     dx, 1           
 
+# ax E8AA
+# dx C4B2
 
     shl     ax, 1
     rcl     dx, 1
+
+# ax D154
+# dx 8965
+
 
     mov     [VAR2],   ax    
     mov     [VAR2+2], dx    

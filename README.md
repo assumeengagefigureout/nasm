@@ -38,10 +38,6 @@ dosbox  -c "mount c ." -c "c:" -c "  debug test.com"
 按 u 键：查看反汇编代码
 按 q 键：退出调试
 
-按 d 键：查看内存内容
-按 u 键：查看反汇编代码
-按 q 键：退出调试
-
 编写汇编代码（.asm 文件）
 使用 nasm 编译
 用 DOSBox 的调试器调试
