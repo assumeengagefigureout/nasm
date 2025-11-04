@@ -22,14 +22,14 @@ sudo apt install -y nasm qemu-system-i386 dosbox dd
 
 编写简单的 DOS 程序 
 创建一个汇编文件（比如 hellp.asm）：
-nasm -f bin test.asm -o test.com
+nasm -f bin 20251103.asm -o 20251103.com
 
 使用 DOSBox 调试
 直接启动 DOSBox 的调试器：
 
 在 DOSBox 调试器中，你可以：
 
-dosbox  -c "mount c ." -c "c:" -c "  debug test.com"
+dosbox  -c "mount c ." -c "c:" -c "  debug 20251103.com"
 
 
 按 t 键：单步执行
